@@ -22,3 +22,10 @@ let saveBtn = $('<button>');
 rowDiv.append(saveBtn);
 saveBtn.text('save');
 saveBtn.addClass('saveBtn');
+
+// Adding an event listener to the save button and saving the input to the local storage.
+let userImput = localStorage.getItem("col-8");
+saveBtn.on("click", function (event) {
+  event.preventDefault();
+  localStorage.setItem("input", userImput);
+});
