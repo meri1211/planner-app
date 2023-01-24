@@ -11,3 +11,14 @@ rowDiv.addClass('row');
 
 let containerEl = $('.container');
 containerEl.append(rowDiv);
+
+// Creating textarea element and button element. 
+// Gave the button the class that was targeted in css.
+let textareaEl = $('<textarea>');
+textareaEl.addClass('col-8');
+rowDiv.append(textareaEl);
+
+let saveBtn = $('<button>');
+rowDiv.append(saveBtn);
+saveBtn.text('save');
+saveBtn.addClass('saveBtn');
